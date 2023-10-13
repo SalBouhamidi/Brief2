@@ -1,0 +1,184 @@
+* {
+    margin: 5px;
+  }
+  
+  .logo {
+    width: 150px;
+    height: 30px;
+  }
+  
+  #navbar1 {
+    display: flex;
+    justify-content: flex-end;
+    list-style-type:none;
+    margin-top: -50px;
+  }
+  
+  .navbar {
+    text-decoration: none;
+    color: Black;
+    margin-right: 60px;
+  }
+  .card .title-card{
+    margin-top:90px;
+    font-weight:bolder ;
+    font-size: 25px;
+
+  }
+  .mainsec{
+    width:100%;
+    height:400px;
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .mainsec .image{
+    width:300px;
+    height:300px;
+  }
+  .mainsec .image img{
+    width: fit-content;
+    height:300px;
+  }
+  .descriptionpage{
+    height:200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 80px;
+    margin-left:40px;
+  }
+  .descriptionpage h{
+    font-size: 29px;
+    font-weight: bold;
+  }
+  .descriptionpage .one{
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .descriptionpage p{
+    font-size:19px;
+    font-weight: bold;
+  }
+
+  .btntoaddmore button{
+    font-size: 17px;
+    font-weight: bold;
+    width: 35px;
+    height:35px;
+    background-color: rgba(207, 185, 153, 1);
+    border:none;
+  }
+  .discountprice{
+    font-size:17px;
+    font-weight: bold;
+  }
+  .discountprice {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+  }
+  .price {
+    width: 130px;
+    height: 40px;
+    border-radius: 200px;
+    border: none;
+    background-color: rgba(207, 185, 153, 1);
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .discount {
+    text-decoration: line-through;
+    color: rgba(207, 185, 153, 1);
+  }
+.totalprice{
+    display: flex;
+    justify-content: space-between;
+}
+.totalprice .redtext{
+    color:rgba(254, 35, 35, 1);
+    font-weight: bold;
+    font-size: 20px;
+}
+.totalprice p{
+    color:black;
+    font-weight: 15px;
+    font-weight: bold;
+}
+.shippingtext{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 17px;
+    font-weight: bold;
+}
+.footerend{
+    width:100%;
+    height: 190px;
+    background-color:rgba(246, 246, 246, 0.87);
+    position:absolute;
+    margin-top:350px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  
+  }
+  .left{
+    font-size: 20px;
+    font-weight: bold;
+    height:150px;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-bottom:50px 
+  }
+  .left ul {
+    list-style-type: none;
+  }
+  .left .infoaboutus{
+    margin-left:30px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  .left .Customer--services{
+    text-decoration-line:underline;
+    cursor: pointer;
+  }
+  
+  .right__text--footer{
+    display:flex;
+    flex-direction:row;
+    width:350px;
+    justify-content: space-between;
+  }
+  .right ul{
+    display:flex;
+    justify-content: flex-end;
+    cursor: pointer;
+  }
+  .right{
+    width:350px;
+    height:190px;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+  
+  }
+  .right button{
+    background-color: rgba(207, 185, 153, 1);
+    color:black;
+    font-weight: bold;
+    border-radius: 200px;
+    border:none;
+    height:25px;
+    cursor: pointer;
+  }
+  .right__text--footer .flesh{
+    font-weight: bold;
+    cursor: pointer;
+  }
