@@ -19,6 +19,9 @@
     color: Black;
     margin-right: 60px;
   }
+  .card{
+    margin-left: 80px
+  }
   .card .title-card{
     margin-top:90px;
     font-weight:bolder ;
@@ -110,18 +113,55 @@
     font-weight: 15px;
     font-weight: bold;
 }
+.checkoutlink {
+  display:flex;
+  justify-content: center;
+  align-items: flex-end;
+  height:100px;
+}
+.buy-wish {
+
+  height: 50px;
+  width: 300px;
+  border-radius: 200px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(207, 185, 153, 1);
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  background-color: rgba(207, 185, 153, 1);
+  cursor: pointer;
+}
+
+.picplace{
+  width:100px;
+  height:40px;
+  display:flex;
+  justify-content: flex-end;
+  align-items: center;
+
+}
+.picplace img{
+  width:40px;
+  height:100%;
+}
 .shippingtext{
-    display: flex;
-    justify-content: flex-end;
-    font-size: 17px;
-    font-weight: bold;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  font-size: 17px;
+  font-weight: bold;
+  height:150px;
 }
 .footerend{
-    width:100%;
+  
+    width:95vw;
     height: 190px;
     background-color:rgba(246, 246, 246, 0.87);
     position:absolute;
-    margin-top:350px;
     display:flex;
     flex-direction: row;
     justify-content: space-between;
