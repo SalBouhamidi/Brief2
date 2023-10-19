@@ -3,15 +3,15 @@
 }
 
 .logo {
-    width: 150px;
-    height: 30px;
+    width: 15%;
+    height: 1%;
 }
 
 #navbar1 {
     display: flex;
     justify-content: flex-end;
     list-style-type: none;
-    margin-top: -50px;
+    margin-top: -6%;
 }
 
 .navbar {
@@ -24,19 +24,18 @@
     display: flex;
     flex-direction: column;
     padding-left: 10px;
+    width:80%;
 
 }
-
 .delivery img {
     width: 397px;
     height: 230px;
 }
-
 #delivery__drone {
     align-self: center;
 }
 
-#delivery__arrived {
+.delivery__arrived {
     align-self: flex-end;
 }
 
@@ -74,10 +73,8 @@
 }
 .footerend{
   
-    width:95vw;
-    height: 190px;
+    width:99%;
     background-color:rgba(246, 246, 246, 0.87);
-    position:absolute;
     display:flex;
     flex-direction: row;
     justify-content: space-between;
@@ -87,17 +84,15 @@
   .left{
     font-size: 20px;
     font-weight: bold;
-    height:150px;
     display:flex;
     flex-direction: column;
     justify-content: flex-end;
-    margin-bottom:50px 
   }
   .left ul {
     list-style-type: none;
   }
   .left .infoaboutus{
-    margin-left:30px;
+    margin-left:20px;
     font-size: 16px;
     cursor: pointer;
   }
@@ -137,4 +132,15 @@
   .right__text--footer .flesh{
     font-weight: bold;
     cursor: pointer;
+  }
+  @media (max-width: 600px){
+    .navbar{
+      display: none;
+    }
+    .delivery{
+      display:flex;
+      justify-content: flex-start;
+
+    }
+
   }

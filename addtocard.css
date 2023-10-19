@@ -104,7 +104,7 @@
     justify-content: space-between;
 }
 .totalprice .redtext{
-    color:rgba(254, 35, 35, 1);
+    color:rgba(0, 175, 28, 1);
     font-weight: bold;
     font-size: 20px;
 }

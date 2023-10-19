@@ -1,25 +1,25 @@
 *{
-  margin:5px;
+  margin:0.3125em;
 }
 
 .logo{
-  width:150px;
-  height:30px;
+  width:15%;
+  height:1%;
 }
 #navbar1 {
   display:flex;
   justify-content: flex-end;
   list-style-type:none;
-  margin-top:-50px;
+  margin-top:-2.5em;
 }
 .navbar{
   text-decoration:none;
   color:Black;
-  margin-right: 60px;
+  margin-right: 3,75em;
 }
 .hero-section {
   background-image: url(heroimg.png);
-  width:100%;
+  max-width:100%;
   height:630px;
   border-radius:10px;
   font-size: 40px;
@@ -94,18 +94,18 @@
 .card-wrap .product-card p{
   color:rgba(161, 138, 104, 1);
 }
-
-
 .about-section{
   display:flex;
   justify-content: center;
   text-align:center;
+  max-width: 100%;
+  margin-left:5px;
 }
 
 .about-section .about h1{
   margin-top:100px;
   font-size: 40px;
-  margin-bottom:-5px
+  margin-bottom:-5px;
 }
 .about-section .about .sd-header{
   font-size:20px; 
@@ -133,16 +133,12 @@ ul {
 .footerbar{
   color:rgba(112, 112, 112, 1);
   text-decoration:none;
-
+  font-size:80%;
 }
 .end{
   display:flex;
   justify-content:space-between;
   text-align: center;
-}
-
-.linee{
-  color:rgba(112, 112, 112, 1);
 }
 .newsletter{
   display: flex;
@@ -152,6 +148,7 @@ ul {
   align-self: flex-end;
   height:fit-content;
   flex-direction: column;
+  color:rgba(112, 112, 112, 1);
   
 }
 .end ul{
@@ -162,3 +159,20 @@ ul {
   display:flex;
   justify-content: flex-end;
 }
+
+@media(max-width:600px){
+  .about-section img{
+    width:97%;
+  }
+  nav{
+    display:none;
+  }
+
+  .hero-section{
+    display:none;
+  }
+  .end {
+    display:flex;
+    flex-wrap: wrap;
+  }
+  }
