@@ -1,146 +1,140 @@
 * {
-    margin: 5px;
+  margin: 5px;
 }
 
 .logo {
-    width: 15%;
-    height: 1%;
+  width: 150px;
+  height: 30px;
 }
 
 #navbar1 {
-    display: flex;
-    justify-content: flex-end;
-    list-style-type: none;
-    margin-top: -6%;
+  display: flex;
+  justify-content: flex-end;
+  list-style-type: none;
+  margin-top: -50px;
 }
 
 .navbar {
-    text-decoration: none;
-    color: Black;
-    margin-right: 60px;
+  text-decoration: none;
+  color: Black;
+  margin-right: 60px;
 }
 
 .delivery {
-    display: flex;
-    flex-direction: column;
-    padding-left: 10px;
-    width:80%;
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
 
 }
+
 .delivery img {
-    width: 397px;
-    height: 230px;
-}
-#delivery__drone {
-    align-self: center;
+  width: 397px;
+  height: 230px;
 }
 
-.delivery__arrived {
-    align-self: flex-end;
+#delivery__drone {
+  align-self: center;
+}
+
+#delivery__arrived {
+  align-self: flex-end;
 }
 
 .delivery button {
-    width: 50px;
-    height: 50px;
-    border-radius: 50px;
-    border: none;
-    background-color: rgba(207, 185, 153, 1);
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  border: none;
+  background-color: rgba(207, 185, 153, 1);
 }
 
 .btn {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    width: 70px;
-    height: 700px;
-    margin-left: 540px;
-    margin-top: 90px;
-    justify-content: space-between;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 70px;
+  height: 700px;
+  margin-left: 540px;
+  margin-top: 90px;
+  justify-content: space-between;
 
 }
 
 .delivery_btn--second {
-    position: absolute;
-    margin-top: 30%;
+  position: absolute;
+  margin-top: 30%;
 }
 
 .img-3 {
-    padding-left: 70%;
+  padding-left: 70%;
 }
 
 .img-2 {
-    padding-left: 35%;
+  padding-left: 35%;
 }
 .footerend{
-  
-    width:99%;
-    background-color:rgba(246, 246, 246, 0.87);
-    display:flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-  
-  }
-  .left{
-    font-size: 20px;
-    font-weight: bold;
-    display:flex;
-    flex-direction: column;
-    justify-content: flex-end;
-  }
-  .left ul {
-    list-style-type: none;
-  }
-  .left .infoaboutus{
-    margin-left:20px;
-    font-size: 16px;
-    cursor: pointer;
-  }
-  .left .Customer--services{
-    text-decoration-line:underline;
-    cursor: pointer;
-  }
-  
-  .right__text--footer{
-    display:flex;
-    flex-direction:row;
-    width:350px;
-    justify-content: space-between;
-  }
-  .right ul{
-    display:flex;
-    justify-content: flex-end;
-    cursor: pointer;
-  }
-  .right{
-    width:350px;
-    height:190px;
-    display: flex;
-    flex-direction: column;
-    justify-content:center;
-  
-  }
-  .right button{
-    background-color: rgba(207, 185, 153, 1);
-    color:black;
-    font-weight: bold;
-    border-radius: 200px;
-    border:none;
-    height:25px;
-    cursor: pointer;
-  }
-  .right__text--footer .flesh{
-    font-weight: bold;
-    cursor: pointer;
-  }
-  @media (max-width: 600px){
-    .navbar{
-      display: none;
-    }
-    .delivery{
-      display:flex;
-      justify-content: flex-start;
 
-    }
+  width:95vw;
+  height: 190px;
+  background-color:rgba(246, 246, 246, 0.87);
+  position:absolute;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
 
-  }
+}
+.left{
+  font-size: 20px;
+  font-weight: bold;
+  height:150px;
+  display:flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-bottom:50px 
+}
+.left ul {
+  list-style-type: none;
+}
+.left .infoaboutus{
+  margin-left:30px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.left .Customer--services{
+  text-decoration-line:underline;
+  cursor: pointer;
+}
+
+.right__text--footer{
+  display:flex;
+  flex-direction:row;
+  width:350px;
+  justify-content: space-between;
+}
+.right ul{
+  display:flex;
+  justify-content: flex-end;
+  cursor: pointer;
+}
+.right{
+  width:350px;
+  height:190px;
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+
+}
+.right button{
+  background-color: rgba(207, 185, 153, 1);
+  color:black;
+  font-weight: bold;
+  border-radius: 200px;
+  border:none;
+  height:25px;
+  cursor: pointer;
+}
+.right__text--footer .flesh{
+  font-weight: bold;
+  cursor: pointer;
+}
