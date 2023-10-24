@@ -17,34 +17,35 @@
 
 <body>
     <header>
-        <img class="logo" src="YouShope.png" alt="Youshope">
+        <div class="logo">
+            <img src="YouShope.png" alt="Youshope">
+        </div>
         <nav>
-            <ul id="navbar1">
-                <li><a class="navbar" href="#shop">Shop</a></li>
-                <li><a class="navbar" href="#blog">Blog</a></li>
-                <li><a class="navbar" href="#ourstory">Our story</a></li>
-                <li>
-                    <h>|</h>
+            <ul class="navigationbar">
+                <li><a href="index.html">shop</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#Shop">Story</a></li>
+                <li>|</li>
+                <li><a href="#search"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                <li><a href="addtocard.css"><i class="fa-solid fa-cart-shopping"></i></a>
                 </li>
-                <li><i class="fa-solid fa-magnifying-glass"></i></li>
-                <li><a href="addtocard.html" style="color:black;"><i class="fa-solid fa-cart-shopping"></i></a></li>
-                <li><i class="fa-regular fa-user"></i></li>
+                <li><a href="#userprofil"><i class="fa-regular fa-user"></i></a></li>
+                <li class="navigationbar__menuburger"><i class="fa-solid fa-bars"></i></li>
             </ul>
-        </nav>
     </header>
     <main>
         <section class="card">
             <h class="title-card">Card</h>
-            <p>_________________________________________________________________</p>
+            <div class="ligneunderproduct">
+                <p>_________________________________________________________________</p>
+            </div>
             <div class="mainsec">
-                <div class="image">
-                    <img src="card3.png" alt="product card">
-                </div>
+                <img src="card3.png" alt="product card">
                 <div class="descriptionpage">
                     <h> Sparkling Hair Accessories </h>
-                    <div clas="descriptionpage-text">
+                    <div class="descriptionpage-text">
                         <p class="one">referance:589908jkhj;</p>
-                        <p>Gold</p>
+                        <p class="one">Gold</p>
                     </div>
                     <br><br>
                     <div class="btntoaddmore">
@@ -53,14 +54,44 @@
                     <div class="discountprice">
                         <p class="price">20.6$</p>
                         <p class="discount">24.8$</p>
-                        
+
                     </div>
                 </div>
+                <i class="fa-solid fa-trash" style="color: #000000;"></i>
             </div>
-            <p>_________________________________________________________________</p>
+            <div class="ligneunderproduct">
+                <p>___________________________________________________________________________________________________
+                </p>
+            </div>
+            <div class="mainsec">
+                <img src="card1.png" alt="product card">
+                <div class="descriptionpage">
+                    <h> Lira Earrings </h>
+                    <div class="descriptionpage-text">
+                        <p class="one">referance:abc90009;</p>
+                        <p class="one">Gold</p>
+                    </div>
+                    <br><br>
+                    <div class="btntoaddmore">
+                        <button>+</button><button>1</button><button>-</button>
+                    </div>
+                    <div class="discountprice">
+                        <p class="price">$ 20,00</p>
+                        <p class="discount">28.8$</p>
+
+                    </div>
+                </div>
+                <i class="fa-solid fa-trash" style="color: #000000;"></i>
+            </div>
+            <div class="ligneunderproduct">
+                <p>___________________________________________________________________________________________________
+                </p>
+            </div>
             <div class="totalprice">
-                <p>Total price:
-                <p>17.51</p>
+                <div class="totalprice--price">
+                    <p>Total price:
+                    <p>17.51</p>
+                </div>
                 <p class="redtext">Extra 15% Off Select Iconic Brands</p>
                 </p>
             </div>
@@ -78,13 +109,11 @@
     </main>
     <footer>
         <div class="footerend">
-            <div class="left">
-                <ul class="Customer--services">
+            <div class="footerend__left">
+                <ul>
                     <li>
-                        <h>Customer Service:</h>
+                        <p id="footerend--left__customerservices">Customer Service:</p>
                     </li>
-                </ul>
-                <ul class="infoaboutus">
                     <li>
                         <p>Contact us</p>
                     </li>
@@ -93,6 +122,9 @@
                     </li>
                     <li>
                         <p>FAQ</p>
+                    </li>
+                    <li>
+                        <p>Your delivery process</p>
                     </li>
                 </ul>
             </div>
@@ -111,6 +143,7 @@
                 </ul>
             </div>
         </div>
+
     </footer>
 
 </body>

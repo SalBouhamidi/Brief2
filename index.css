@@ -2,6 +2,10 @@
   margin:0.3125em;
 }
 
+header div{
+  display: none;
+}
+
 .logo{
   width:15%;
   height:1%;
@@ -16,6 +20,9 @@
   text-decoration:none;
   color:Black;
   margin-right: 3,75em;
+}
+.navigationbar__menuburger{
+  display: none;
 }
 .hero-section {
   background-image: url(heroimg.png);
@@ -160,12 +167,28 @@ ul {
   justify-content: flex-end;
 }
 
+
+.showmenu{
+  display: block;
+}
+
 @media(max-width:600px){
   .about-section img{
     width:97%;
   }
   nav{
     display:none;
+  }
+
+  header div{
+    display: block;
+  }
+
+  header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
   }
 
   .hero-section{
@@ -175,4 +198,21 @@ ul {
     display:flex;
     flex-wrap: wrap;
   }
+
+  ul#navbar1 {
+    flex-direction: column;
+    background: rgb(196, 194, 190);
+    width: 100vw;
+    font-weight: bold;
+    margin: 0 auto;
+    position: absolute;
+    top: 5em;
+    left: 0;
+    text-align: center;
+    line-height: 4;
+    font-family: sans-serif;
+}
+
+
+
   }

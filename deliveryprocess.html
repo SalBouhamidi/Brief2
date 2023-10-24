@@ -17,59 +17,60 @@
 
 <body>
     <header>
-        <img class="logo" src="YouShope.png" alt="Youshope">
+        <div class="logo">
+            <img src="YouShope.png" alt="Youshope">
+        </div>
         <nav>
-            <ul id="navbar1">
-                <li><a class="navbar" href="index.html">Shop</a></li>
-                <li><a class="navbar" href="#blog">Blog</a></li>
-                <li><a class="navbar" href="#ourstory">Our story</a></li>
-                <li>
-                    <h>|</h>
+            <ul class="navigationbar">
+                <li><a href="index.html">shop</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#Shop">Story</a></li>
+                <li>|</li>
+                <li><a href="#search"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                <li><a href="addtocard.html"><i class="fa-solid fa-cart-shopping"></i></a>
                 </li>
-                <li><i class="fa-solid fa-magnifying-glass"></i></li>
-                <li><a href="addtocard.html" style="color:black;"><i class="fa-solid fa-cart-shopping"></i></a></li>
-                <li><i class="fa-regular fa-user"></i></li>
+                <li><a href="#userprofil"><i class="fa-regular fa-user"></i></a></li>
+                <li class="navigationbar__menuburger"><a href="#burger-menu"><i class="fa-solid fa-bars"></i></a></li>
             </ul>
-        </nav>
     </header>
     <main>
+    <main>
         <section class="delivery">
-            <div>
-                <h>Order processing</h>
+            <div class="delivery__preprocessing">
                 <img src="imgofprocessing.png" alt="picture of processing">
+                <p>Order processing<button>&#10004</button></p>
             </div>
-
-            <div class="delivery_btn--second">
-                <button>✔</button>
-            </div>
-            <div class="img-2">
-                <h>On its way to you </h>
+            <div class="delivery__onitsway">
                 <img id="delivery__drone" src="undraw_Drone_delivery_re_in95.png"
                     alt="picture of delivery process using drone">
+                    <p>On its way to you <button>&#10004</button></p>
             </div>
-            <div class="img-3">
-                <h>Hope you like it</h>
-                <img class="delivery__arrived" src="arrived (2).png" alt="image of delivery">
-            </div>
-
-            <div class="btn">
-                <button class="delivery_btn">✔</button>
-                <button class="delivery_btn">✔</button>
-
+            <div class="delivery__delivered">
+                <img src="arrived (2).png" alt="image of delivery">
+                <p>Hope you like it <button>&#10004</button></p>
             </div>
 
         </section>
     </main>
     <footer>
         <div class="footerend">
-            <div class="left">
-                <ul class="Customer--services">
-                </ul>
-                <ul class="infoaboutus">
-                    <li><h>Customer Service:</h></li>
-                    <li><p>Contact us</p></li>
-                    <li><p>Return Policy & Exchanges</p></li>
-                    <li><p>FAQ</p></li>
+            <div class="footerend__left">
+                <ul>
+                    <li>
+                        <p id="footerend--left__customerservices">Customer Service:</p>
+                    </li>
+                    <li>
+                        <p>Contact us</p>
+                    </li>
+                    <li>
+                        <p>Return Policy & Exchanges</p>
+                    </li>
+                    <li>
+                        <p>FAQ</p>
+                    </li>
+                    <li>
+                        <p>Your delivery process</p>
+                    </li>
                 </ul>
             </div>
             <div class="right">
@@ -87,6 +88,7 @@
                 </ul>
             </div>
         </div>
+
     </footer>
 
 </body>

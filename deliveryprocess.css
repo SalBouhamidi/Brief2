@@ -1,140 +1,149 @@
 * {
-  margin: 5px;
+  padding: 0px;
 }
 
 .logo {
-  width: 150px;
-  height: 30px;
+  width: 20%;
+  height: 8%;
 }
 
-#navbar1 {
+.logo img {
+  width: 60%;
+}
+
+header {
   display: flex;
-  justify-content: flex-end;
-  list-style-type: none;
-  margin-top: -50px;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.navbar {
-  text-decoration: none;
-  color: Black;
-  margin-right: 60px;
+.navigationbar {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0px;
+  margin-right: 15%;
+  gap: 50px;
+}
+
+.navigationbar__menuburger {
+  display: none;
+}
+
+.navigationbar a {
+  text-decoration-line: none;
+  color: black;
+  font-size: 1em;
+  padding: 10%;
 }
 
 .delivery {
   display: flex;
   flex-direction: column;
-  padding-left: 10px;
-
 }
-
-.delivery img {
-  width: 397px;
-  height: 230px;
-}
-
-#delivery__drone {
-  align-self: center;
-}
-
-#delivery__arrived {
-  align-self: flex-end;
-}
-
-.delivery button {
-  width: 50px;
-  height: 50px;
-  border-radius: 50px;
-  border: none;
-  background-color: rgba(207, 185, 153, 1);
-}
-
-.btn {
-  position: absolute;
+.delivery__preprocessing{
   display: flex;
-  flex-direction: column;
-  width: 70px;
-  height: 700px;
-  margin-left: 540px;
-  margin-top: 90px;
-  justify-content: space-between;
-
+  flex-direction: column; 
 }
-
-.delivery_btn--second {
-  position: absolute;
-  margin-top: 30%;
-}
-
-.img-3 {
-  padding-left: 70%;
-}
-
-.img-2 {
-  padding-left: 35%;
-}
-.footerend{
-
-  width:95vw;
-  height: 190px;
-  background-color:rgba(246, 246, 246, 0.87);
-  position:absolute;
-  display:flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start;
-
-}
-.left{
-  font-size: 20px;
+.delivery__preprocessing p{
   font-weight: bold;
-  height:150px;
-  display:flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  margin-bottom:50px 
 }
-.left ul {
-  list-style-type: none;
+.delivery img {
+  width: 40%;
 }
-.left .infoaboutus{
-  margin-left:30px;
-  font-size: 16px;
-  cursor: pointer;
-}
-.left .Customer--services{
-  text-decoration-line:underline;
-  cursor: pointer;
-}
-
-.right__text--footer{
-  display:flex;
-  flex-direction:row;
-  width:350px;
-  justify-content: space-between;
-}
-.right ul{
-  display:flex;
-  justify-content: flex-end;
-  cursor: pointer;
-}
-.right{
-  width:350px;
-  height:190px;
+.delivery__onitsway{
   display: flex;
   flex-direction: column;
-  justify-content:center;
+  align-items: center;
+}
+.delivery__onitsway p{
+  font-weight: bold;
+}
+.delivery__delivered{
+  display: flex;
+  flex-direction: column; 
+  align-items: flex-end;
+}
+.delivery__delivered p{
+  font-weight: bold;
+}
+.delivery button{
+  font-weight: bold;
+  font-size: 100%;
+}
+.footerend {
+  width: 100%;
+  background-color: rgba(246, 246, 246, 0.87);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footerend__left p {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footerend__left li {
+  list-style: none;
+  cursor: pointer;
+}
+
+#footerend--left__customerservices {
+  text-decoration: underline;
+}
+
+.right__text--footer {
+  display: flex;
+  flex-direction: row;
+  width: 350px;
+  justify-content: space-between;
+}
+
+.right ul {
+  display: flex;
+  justify-content: flex-end;
+  cursor: pointer;
+}
+
+.right {
+  width: 350px;
+  height: 190px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
 }
-.right button{
+
+.right button {
   background-color: rgba(207, 185, 153, 1);
-  color:black;
+  color: black;
   font-weight: bold;
   border-radius: 200px;
-  border:none;
-  height:25px;
+  border: none;
+  height: 25px;
   cursor: pointer;
 }
-.right__text--footer .flesh{
+.right__text--footer .flesh {
   font-weight: bold;
   cursor: pointer;
+}
+@media (max-width:600px){
+  .navigationbar{
+    display: none;
+  }
+  .logo{
+    width:50%;
+    height:20%;
+  }
+  .delivery {
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: flex-start;
+  }
+  .delivery__preprocessing{
+    align-items: flex-start;
+  }
 }
