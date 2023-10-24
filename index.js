@@ -1,4 +1,4 @@
-let navbar=document.querySelector('nav');
+let navibar=document.querySelector('nav');
 document.querySelector('.menu-burger').addEventListener('click',function(){
-    navbar.classList.toggle('showmenu')
+    navibar.classList.toggle('showmenu')
 })
