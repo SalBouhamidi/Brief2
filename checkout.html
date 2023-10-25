@@ -19,23 +19,24 @@
     <header>
         <img class="logo" src="YouShope.png" alt="Youshope">
         <nav>
-            <ul id="navbar1">
+            <ul class="navbar1">
                 <li><a class="navbar" href="index.html">Shop</a></li>
                 <li><a class="navbar" href="#blog">Blog</a></li>
                 <li><a class="navbar" href="#ourstory">Our story</a></li>
                 <li>
-                    <h>|</h>
+                    <h class="navbar">|</h>
                 </li>
-                <li><i class="fa-solid fa-magnifying-glass"></i></li>
-                <li><a href="addtocard.html" style="color:black;"><i class="fa-solid fa-cart-shopping"></i></a></li>
-                <li><i class="fa-regular fa-user"></i></li>
+                <li><i class="fa-solid fa-magnifying-glass navbar"></i></li>
+                <li><a href="addtocard.html" style="color:black;"><i class="fa-solid fa-cart-shopping navbar"></i></a></li>
+                <li><i class="fa-regular fa-user navbar"></i></li>
+                <li>  <i class="fa-solid fa-bars menu-burger" ></i></li>
             </ul>
         </nav>
     </header>
     <main>
         <section class="checkoutpage">
             <div class="checkoutpage__products">
-                <h style="font-size: 20px;" >Checkout page:</h>
+                <h style="font-size: 20px;">Checkout page:</h>
                 <div class="checkoutpage__products products">
                     <h> Products :</h>
                     <p>______________________________________________________________________</p>
@@ -43,18 +44,22 @@
                         <img src="card3.png" alt="picture of jewelries">
                         <p class="title">Sparking hair<br>accessories</p>
                         <p>|</p>
-                        <p>*1</p>
+                        <button id="increment">+</button>
+                        <input id="ourinput"type="number" value="1" readonly>
+                        <button id="decr">-</button>
                         <p>|</p>
-                        <p>17,51 $</p>
+                        <p class="price" value="17">17.51 </p>
                     </div>
                     <p>______________________________________________________________________</p>
                     <div class="checkoutpage__products product">
                         <img src="card6.png" alt="picture of jewelries">
                         <p class="title">Yuki Hair Pin Set of 3<br>Set of 3</p>
                         <p>|</p>
-                        <p>*2</p>
+                        <button id="plus2">+</button>
+                        <input id="input2" type="number" value="1" readonly >
+                        <button id="mince2">-</button>
                         <p>|</p>
-                        <p>24,65$</p>
+                        <p id="pricevalue2" value="24,65">24,65 </p>
                     </div>
                     <p>______________________________________________________________________</p>
                     <div class="checkoutpage__products total">
@@ -65,14 +70,14 @@
                 </div>
             </div>
         </section>
-        <section class="payment">
+        <form class="payment">
             <P>Payment info:</P>
             <div class="form">
-                <input type="text" id="fullname" placeholder="Full name:">
-                <input type="number" placeholder="Phone number:">
-                <input type="text" placeholder="Email:">
+                <input type="text" id="fullname" pattern="[A-Za-z ]{5, }" placeholder="Full name:">
+                <input type="number" pattern="[+0-9 ]" minlength="9" required placeholder="Phone number:">
+                <input type="text" required  placeholder="Email:">
                 <button class="country">Country:</button>
-                <select class="country" name="Country">
+                <select class="country" name="Country" required>
                     <option value="Morocco">Morocco</option>
                     <option value="Canada">Canada</option>
                     <option value="China">China</option>
@@ -82,24 +87,25 @@
                     <option value="germany">Germany</option>
                     <option value="others">Other counntry</option>
                 </select>
-                <input class="form__infocity" type="text" placeholder="City: ">
-                <input class="form__infocity" type="text" placeholder="ZIP code:">
-                <input type="text" placeholder="Full address">
+                <input class="form__infocity" type="text" placeholder="City: " required>
+                <input class="form__infocity" type="text" title="Must be at least 5numbers"
+                    placeholder="ZIP code:" required pattern="[0-9 ]" minlength="5">
+                <input type="text" placeholder="Full address" required>
                 <button class="form__paymentmethod">Payment method:</button>
-                <select name="Method of payment" class="form__paymentmethod">
+                <select required name="Method of payment" class="form__paymentmethod">
                     <option value="COD">Cash on delivery</option>
                     <option value="banktransfer">Transfer from bank account</option>
                     <option value="credit card option">Credit card</option>
                     <option value="paypal">Paypal</option>
                 </select>
-                <input type="text" placeholder="Name on card:">
-                <input type="text" placeholder="Number of card:">
-                <input type="number" placeholder="Card expiration number: DD-MM-YYYY:">
+                <input type="text" required placeholder="Name on card:">
+                <input type="text" required placeholder="Number of card:">
+                <input type="number" required placeholder="Card expiration number: DD-MM-YYYY:">
             </div>
             <div class="paynow">
-                <a href="#">Pay Now</a>
+                <button class="paynow" href="#" type="submit">Pay Now</button>
             </div>
-        </section>
+        </form>
     </main>
     <footer>
         <div class="footerend">
@@ -120,7 +126,8 @@
                         <p>FAQ</p>
                     </li>
                     <li>
-                        <a href="deliveryprocess.html" style="color:black; text-decoration: none;">Your delivery process</a>
+                        <a href="deliveryprocess.html" style="color:black; text-decoration: none;">Your delivery
+                            process</a>
                     </li>
                 </ul>
             </div>
@@ -140,6 +147,8 @@
             </div>
         </div>
     </footer>
+    <script src="index.js"></script>
+    <script src="checkout.js"></script>
 </body>
 
 </html>

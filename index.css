@@ -201,7 +201,7 @@ ul {
 
   ul#navbar1 {
     flex-direction: column;
-    background: rgb(196, 194, 190);
+    background: rgb(255, 240, 240);
     width: 100vw;
     font-weight: bold;
     margin: 0 auto;
@@ -210,9 +210,10 @@ ul {
     left: 0;
     text-align: center;
     line-height: 4;
-    font-family: sans-serif;
 }
 
 
 
   }
+
+
